@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-template-rows: 50px auto;
+    height: 100vh;
+    overflow-x: scroll;  
+    box-sizing: border-box;  
+}
+
+.head-row {
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.head-row .col-head {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+.serial-no {
+    position: sticky;
+    left: 0;
+    background-color: white;;
+}
+
+.serial-no .row-number {
+    width: 38px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.junction {
+    border: 1px solid black;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.body{
+    z-index:100;
+}
+
+.row {
+    display: flex;
+}
+
+.cell{
+    border: 1px solid black;
+    width: 150px;
+    height: 30px;
+    outline: none;
+    cursor: text;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+    white-space: pre-wrap;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    width: 190vw;
+}
+
+.box input {
+    flex-grow: 1;
+    border-width: 1px;
+    border-radius: 50px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.selected-cell {
+    width: 190px;
+    border-radius: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+.form-container{
+    background-color: grey;
+    padding: 10px;
+    margin: 0 30px;
+}
+
+.fr-alc{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="checkbox"],input[type="radio"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked + label, input[type="radio"]:checked + label{
+    background-color: aqua;
+}
+
+label{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type="color"]{
+    height: 0px;
+    width: 0px;
+    visibility: hidden;
+}
+
